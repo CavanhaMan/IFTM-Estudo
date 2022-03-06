@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class cripto {
+public class aula_cript_v1 {
     private static Scanner input;
 
     public static void main(String[] args) {
