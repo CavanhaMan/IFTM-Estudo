@@ -1,6 +1,21 @@
+.git
 .class
 /.settings
 .settings
 .project
 .bak
 .classpath
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+#C++
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
