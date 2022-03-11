@@ -14,7 +14,6 @@ public class AtividadeListaOk {
 		System.out.println("Lista das frutas já pré-inseridas no sistema:");
 		System.out.println(frutas);
 		do {	
-			
 			int tamanho = frutas.size();
 			
 			System.out.println("\n------------------------------------------------------------------");
@@ -30,32 +29,27 @@ public class AtividadeListaOk {
 				} while (posicao>frutas.size());
 			
 			System.out.println("\n------------------------------------------------------------------");
-			System.out.printf("Informe uma fruta para ser inserida na %dª posição: ",posicao);
+			System.out.printf("Informe uma fruta para ser inserida na posição %d: ",posicao);
 			frutas.add(posicao,sc.next());
 		    
 			System.out.println("\n------------------------------------------------------------------");
 			System.out.println("Segue a lista das frutas com a nova adição: ");
 			System.out.println(frutas);
 			
-			if (posicao==0)
-				System.out.printf("\nO novo elemento adicionado é '%s', foi inserido na posição %d e a lista agora tem %d itens.\n",frutas.get(posicao),posicao,frutas.size());
-			else
-				System.out.printf("\nO novo elemento adicionado é '%s', foi inserido na %dª posição e a lista agora tem %d itens.\n",frutas.get(posicao),posicao,frutas.size());
-	
+			System.out.printf("\nO novo elemento adicionado é '%s', foi inserido na posição %d e a lista agora tem %d itens.\n",frutas.get(posicao),posicao,frutas.size());
 			
 			System.out.println("\n------------------------------------------------------------------");
 			System.out.println("Quer inserir outra fruta?");
-			System.out.printf("Tecle 1 para sim e 2 para não: ");
+			System.out.printf("Tecle 0 para parar e qualquer outro numero para continuar: ");
 			escolha = sc.nextInt();
 		
-		}while (escolha!=2);
+		}while (escolha!=0);
 		
 		System.out.println("\n------------------------------------------------------------------");
 		System.out.println("Segue a lista das frutas em ordem alfabética: ");
 		Collections.sort(frutas);
 		System.out.println(frutas);
 	
-		
 		System.out.println("\n\n\n----------------------- PROGRAMA ENCERRADO -----------------------");
 		
 		sc.close();

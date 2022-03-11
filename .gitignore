@@ -1,9 +1,16 @@
 .git
-/.settings
+git
+.git/
+git/
+
+/.settings/
+.settings
 .settings
 .project
+.project/
 .bak
 .classpath
+.classpath/
 
 #JAVA 
 
